@@ -11,7 +11,7 @@ Custom implementation of pdfgen_endpoint.py that allows saving scheduled-PDF das
 
 * cp /opt/splunk/splunk/etc/system/bin/pdfgen_endpoint.py /opt/splunk/splunk-backup/pdfgen_endpoint.py.orig
 * cp reportsaver/pdfgen_endpoint.py /opt/splunk/splunk/etc/system/bin/pdfgen_endpoint.py
-* chown ussplunk:splunk /opt/splunk/splunk/etc/system/bin/pdfgen_endpoint.py
+* chown ussplunk:$(id -g ussplunk) /opt/splunk/splunk/etc/system/bin/pdfgen_endpoint.py
 
 ### Involved Files ###
 
